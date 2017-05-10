@@ -1,0 +1,12 @@
+"""Ask the user for a string and print out whether this string is a palindrome or not. (A palindrome is a string that reads the same forwards and backwards.)"""
+
+
+def palindromeornot(instring):
+  instring.lower()
+  if instring[0:] == instring[::-1]:
+       return True
+  else:
+      return False
+  
+inputstring = input("Enter the string to check if it is palindrome or not")
+print(palindromeornot(inputstring))
