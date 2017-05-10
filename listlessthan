@@ -1,0 +1,13 @@
+// This program returns all the values in a list less than the input number and
+// it returns it as a list.
+def returnlessthan(argnum,nbrinput):
+  newlist = []
+  for nbr in argnum:
+    if (nbr < nbrinput):
+      newlist.append(nbr)
+  print(newlist)
+  return
+    
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+valuelessthan = input("Enter a number to return all the elements less than the entered value")
+returnlessthan(a,int(valuelessthan))
